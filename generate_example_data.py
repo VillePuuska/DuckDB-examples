@@ -71,4 +71,4 @@ for df_id in range(1, 6):
         
         df_temp = pd.DataFrame([record])
         df = pd.concat([df, df_temp])
-    df.to_parquet(f"data/df_{df_id}.parquet")
+    df.to_parquet(f"data/df_{df_id}.parquet", index=False)
