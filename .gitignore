@@ -162,5 +162,8 @@ cython_debug/
 # DuckDB database files
 *.db
 
+# DuckDB write-ahead log
+*.db.wal
+
 # Directory for example data generated for the tutorial
 data/
