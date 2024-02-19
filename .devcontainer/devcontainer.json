@@ -1,0 +1,16 @@
+{
+    "name": "Microsoft base image & Postgres",
+    "dockerComposeFile": "docker-compose.yaml",
+    "service": "base",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "forwardPorts": [5432, 5432],
+    "postCreateCommand": "pip install --user -r requirements.txt && python generate_example_data.py",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-toolsai.jupyter",
+                "ms-python.python"
+            ]
+        }
+    }
+}
